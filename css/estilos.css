@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    overflow-x: hidden;
+}
+
+/* Temas */
+.light-theme {
+    --bg: #ff8873;
+    --navBg: black;
+    --FontePadrão: #000;
+    --FonteEsp: red;
+    --btnFont: white;
+    --btnbg: #001382;
+    --footerFont: #fff;
+}
+
+.dark-theme {
+    --bg: #000;
+    --navBg: #ff8873;
+    --FontePadrão: #fff;
+    --FonteEsp: #ff0000;
+    --btnFont: white;
+    --btnbg: #000;
+    --footerFont: #000;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--navBg);
+    flex-wrap: wrap;
+}
+
+#btns button {
+    margin: 0 0.5rem;
+}
+
+nav button {
+    background-color: var(--btnbg);
+    color: var(--btnFont);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 35px 0 35px 35px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    transition: 0.3s;
+    padding: 0.6rem 1.2rem;
+    border-radius: 35px;
+}
+
+/* Botão Tema */
+.btn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: var(--btnbg);
+    color: white;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    text-align: center;
+    border: 2px medium gray;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.btn:hover{
+    transform: rotate(900deg);
+    transition-duration: 30s;
+    transition-timing-function: linear;
+}
+.btn u{
+    position: relative;
+    font-size: auto;
+    right: 10px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin: 2rem auto;
+    color: var(--FontePadrão);
+    font-size: 2rem;
+}
+
+/* Imagem principal */
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+#fakeNewsLG {
+    position: absolute;
+    top: 20vh;
+    height: 60vh;
+    width: auto;
+    margin-inline: 10vw;
+}
+
+/* Rodapé */
+footer {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    padding-block: 5vh;
+    background-color: var(--navBg);
+    color: var(--footerFont);
+}
+
+#IFlogo {
+    position: absolute;
+    height: 70%;
+    width: auto;
+    right: 1%;
+    bottom: 2vh;
+    z-index: 1;
+}
+#footerTX{
+    position: relative;
+    margin-right: 30vw;
+    margin-left: 1vw;
+}
+
+        #popup{
+            position: absolute;
+            top: auto;
+            right: 40vw;
+            word-break: break-all;
+            height: auto;
+            width: 20vw;
+            padding: none;
+            background-color: hwb(0 100% 0% / 0.7);
+            border-radius: 0 0 10px 10px;
+            transition-duration: 1s;
+        }
+
+
+/* Responsividade */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        flex-wrap: nowrap;
+    }
+
+    #btns {
+        display: flex;
+    }
+    #IFlogo {
+        height: 90%;
+        width: auto;
+        right: 1%;
+        bottom: 1vh;
+}
+
+}
