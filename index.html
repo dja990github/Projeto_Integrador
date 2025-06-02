@@ -5,44 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto: "Entre likes e mentiras"</title>
     <link rel="icon" href="./img/lg.jpg">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body class="light-theme">
-    <nav>
-        <div id="btnIMG">
-            <img src="">
-        </div>
-        <div id="btns">
-            <button onmouseover="dados('Documentos')" onmouseout="dados('out')">
-                <a href="./docs.html">Documentos</a>
-            </button>
-            <button onmouseover="dados('site')" onmouseout="dados('out')">
-                <a href="https://brasilescola.uol.com.br/curiosidades/o-que-sao-fake-news.htm">Fake News</a>
-            </button>
-            <button onmouseover="dados('game')" onmouseout="dados('out')">
-                <a href="">Games</a>
-            </button>
-        </div>
-        <div>
-            <button class="btn"><u>Tema</u></button>
-        </div>
-    </nav>
+
+    <nav class="navbar">
+    <div class="logo-container">
+        <img src="" class="logo-img">
+    </div>
+    
+    <!-- Centralizar isso -->
+    <div class="nav-buttons">
+        <a href="./docs.html" onmouseover="dados('Documentos')" onmouseout="dados('out')">Documentos</a>
+        <a href="https://brasilescola.uol.com.br/curiosidades/o-que-sao-fake-news.htm" onmouseover="dados('site')" onmouseout="dados('out')">Fake News</a>
+        <a href="#" onmouseover="dados('game')" onmouseout="dados('out')">Games</a>
+    </div>
+
+    <button class="btn"><u>Tema</u></button>
+</nav>
 
     <aside id="popup"></aside>
 
-    <main>
+    <main class="main-content">
         <h1>Entre likes e mentiras<br>Desvendando as Fake News nas redes sociais</h1>
         <div class="img-container">
-            <img id="fakeNewsLG" src="./img/imagem-destacada-fake-news-o-que-as-principais-redes-sociais-tem-feito-para-lida-740x470-removebg-preview.png">
+            <img id="fakeNewsLG" src="./img/imagem-destacada-fake-news-o-que-as-principais-redes-sociais-tem-feito-para-lida-740x470-removebg-preview.png" alt="Fake News">
         </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <img id="IFlogo" src="./img/Marca_IFSP_2015_GRU-05.jpg" alt="IFSP Logo">
         <div id="footerTX">
-            Este projeto investiga o fenômeno das fake news nas redes sociais, buscando compreender como essas informações falsas se espalham e impactam na nossa vida. A proposta surgiu da observação do cotidiano e da crescente influência das redes na disseminação de conteúdos, muitas vezes enganosos e prejudiciais.        </div>
+            Este projeto investiga o fenômeno das fake news nas redes sociais, buscando compreender como essas informações falsas se espalham e impactam na nossa vida. A proposta surgiu da observação do cotidiano e da crescente influência das redes na disseminação de conteúdos, muitas vezes enganosos e prejudiciais.
+        </div>
     </footer>
-
 
     <script src="./js/tema.js"></script>
 </body>
