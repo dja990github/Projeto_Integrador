@@ -19,7 +19,7 @@ const switcher = document.querySelector('.btn');
                     popup.style.padding = "1vh";
                 } 
                 if (type === "game") {
-                    popup.innerText = "Jogo educativo com abordagem sobre Fake News, desenvolvido  por alunos do Instituto Federal de Sâo Paulo campus guarulhos ";
+                    popup.innerText = "Jogo educativo com abordagem sobre Fake News, desenvolvido  pelo grupo gusmanson";
                     popup.style.padding = "1vh";
                 }
                 if (type === "Documentos") {
